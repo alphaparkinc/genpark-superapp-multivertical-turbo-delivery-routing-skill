@@ -1,0 +1,41 @@
+{
+  "name": "genpark-superapp-multivertical-turbo-delivery-routing-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Latin American multi-vertical superapp courier dispatch and 10-minute turbo delivery routing engine with integrated wallet rewards.",
+  "author": "genpark",
+  "category": "superapp",
+  "tags": [
+    "superapp",
+    "turbo-delivery",
+    "multivertical-routing",
+    "darkstore-logistics",
+    "rappi"
+  ],
+  "inputs": {
+    "user_lat": {
+      "type": "number"
+    },
+    "user_lon": {
+      "type": "number"
+    },
+    "basket_type": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "dispatch_id": {
+      "type": "string"
+    },
+    "superapp_vertical": {
+      "type": "string"
+    },
+    "estimated_delivery_minutes": {
+      "type": "number"
+    },
+    "rappi_pay_cashback_applied_usd": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
